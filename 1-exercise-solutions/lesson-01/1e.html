@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      const productCost = 10 + 8 * 2;
+
+      const paragraph = <p>Product cost: ${productCost}</p>;
+
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render(paragraph);
+    </script>
+  </body>
+</html>

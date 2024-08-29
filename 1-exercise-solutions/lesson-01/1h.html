@@ -6,17 +6,17 @@
   <body>
     <div class="js-container"></div>
 
-    <!-- Load the React external library. -->
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+
     <script src="https://unpkg.com/supersimpledev/react.js"></script>
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
 
-    <!-- Load the babel external library -->
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
-
     <script type="text/babel">
-      // This code starts React.
+      const paragraph = <p>Today is {dayjs().format('MMMM D')}</p>;
+
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render();
+      ReactDOM.createRoot(container).render(paragraph);
     </script>
   </body>
 </html>
