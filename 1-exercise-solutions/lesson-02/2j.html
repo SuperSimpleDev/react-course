@@ -11,9 +11,23 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-      function ProductDetails({ name, price, discountPrice }) {
+      // Note: there are several extra changes that are required to add the
+      // image, and also to get the correct layout and size for the image.
+
+      // 1. Add an imageSrc prop, so we can put the src attribute into
+      //    this component.
+      function ProductDetails({ name, price, discountPrice, imageSrc }) {
         return (
-          <>
+          // 2. Change the wrapper to a <div> (without this, the image and
+          //    the "Add to Cart" button will be displayed on the same line).
+          //    Using a <div> (a block element) will put each product on a
+          //    new line.
+          <div>
+            {/*
+              3. Set the src attribute to the value of the imageSrc prop.
+              4. Adjust the width of the image since they're too big.
+            */}
+            <img src={imageSrc} width="150" />
             <p>{name}</p>
             {discountPrice ? (
               <>
@@ -24,16 +38,30 @@
               <p>Price: ${price}</p>
             )}
             <button>Add to Cart</button>
-          </>
+          </div>
         );
       }
 
       function App() {
         return (
           <>
-            <ProductDetails name="Cotton socks" price="10.90" discountPrice="5.45" />
-            <ProductDetails name="Tennis balls" price="6.00" />
-            <ProductDetails name="Plain T-Shirt" price="7.99" />
+            {/* 5. Provide the imageSrc prop to each <ProductDetails> */}
+            <ProductDetails
+              name="Cotton socks"
+              price="10.90"
+              discountPrice="5.45"
+              imageSrc="cotton-socks.png"
+            />
+            <ProductDetails
+              name="Tennis balls"
+              price="6.00"
+              imageSrc="tennis-balls.png"
+            />
+            <ProductDetails
+              name="Plain T-Shirt"
+              price="7.99"
+              imageSrc="plain-t-shirt.png"
+            />
           </>
         );
       }
