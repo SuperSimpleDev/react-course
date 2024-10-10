@@ -9,3 +9,14 @@ Links mentioned in each lesson of the React Course:
 <br><br>
 - Starting code: https://supersimple.dev/react-basics
 - External library example: https://unpkg.com/supersimpledev/external-library.js
+
+## Lesson 2
+- Chatbot project: https://supersimple.dev/projects/chatbot
+<br><br>
+- HTML CSS Full course: https://youtu.be/G3e-cpL7ofc
+- JavaScript Full course: https://youtu.be/EerdGm-ehJQ
+<br><br>
+- Product images for the exercises:<br>
+https://supersimple.dev/images/cotton-socks.png<br>
+https://supersimple.dev/images/tennis-balls.png<br>
+https://supersimple.dev/images/plain-t-shirt.png
