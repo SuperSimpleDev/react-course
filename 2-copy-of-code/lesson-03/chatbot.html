@@ -27,6 +27,13 @@
               message: inputText,
               sender: 'user',
               id: crypto.randomUUID()
+            },
+            // Another solution is to add the Loading... message
+            // to newChatMessages, but we have to remove it later.
+            {
+              message: 'Loading...',
+              sender: 'robot',
+              id: crypto.randomUUID()
             }
           ];
 
@@ -34,7 +41,9 @@
 
           const response = await Chatbot.getResponseAsync(inputText);
           setChatMessages([
-            ...newChatMessages,
+            // This makes a copy of newChatMessages, but without the
+            // last message in the array.
+            ...newChatMessages.slice(0, newChatMessages.length - 1),
             {
               message: response,
               sender: 'robot',
