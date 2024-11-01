@@ -20,3 +20,6 @@ Links mentioned in each lesson of the React Course:
 https://supersimple.dev/images/cotton-socks.png<br>
 https://supersimple.dev/images/tennis-balls.png<br>
 https://supersimple.dev/images/plain-t-shirt.png
+
+## Lesson 3
+- Chatbot external library: https://unpkg.com/supersimpledev/chatbot.js
