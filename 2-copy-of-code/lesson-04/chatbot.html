@@ -81,6 +81,11 @@
         color: rgb(120, 120, 120);
         text-align: center;
       }
+
+      .loading-spinner {
+        height: 40px;
+        margin: -15px;
+      }
     </style>
   </head>
   <body>
@@ -100,7 +105,13 @@
           setInputText(event.target.value);
         }
 
-        function sendMessage() {
+        async function sendMessage() {
+          // Clear the textbox at the top now because the Chatbot
+          // will take some time to load the response. We want
+          // to clear the textbox immediately rather waiting
+          // for the Chatbot to finish loading.
+          setInputText('');
+
           const newChatMessages = [
             ...chatMessages,
             {
@@ -110,9 +121,19 @@
             }
           ];
 
-          setChatMessages(newChatMessages);
+          setChatMessages([
+            ...newChatMessages,
+            // This creates a temporary Loading... message.
+            // Because we don't save this message in newChatMessages,
+            // it will be removed later, when we add the response.
+            {
+              message: <img src="loading-spinner.gif" className="loading-spinner" />,
+              sender: 'robot',
+              id: crypto.randomUUID()
+            }
+          ]);
 
-          const response = Chatbot.getResponse(inputText);
+          const response = await Chatbot.getResponseAsync(inputText);
           setChatMessages([
             ...newChatMessages,
             {
@@ -121,8 +142,6 @@
               id: crypto.randomUUID()
             }
           ]);
-
-          setInputText('');
         }
 
         return (
