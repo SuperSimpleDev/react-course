@@ -39,10 +39,9 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-      function App() {
+      function LoginForm() {
         return (
           <>
-            <p className="title">Hello, welcome to my website</p>
             <div>
               <input
                 placeholder="Email"
@@ -58,6 +57,15 @@
             </div>
             <button className="login-button">Login</button>
             <button className="login-button">Sign up</button>
+          </>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            <p className="title">Hello, welcome to my website</p>
+            <LoginForm />
           </>
         );
       }
