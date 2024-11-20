@@ -11,24 +11,18 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-      function App() {
-        return (
-          <>
-            <p>Hello, welcome to my website</p>
-            <div>
-              <input placeholder="Email" />
-            </div>
-            <div>
-              <input placeholder="Password" type="password" />
-            </div>
-            <button>Login</button>
-            <button>Sign up</button>
-          </>
-        );
-      }
+      const button = <button>hello</button>;
+      const paragraph = <p>paragraph of text</p>;
+
+      const div = (
+        <div>
+          <button>hello</button>
+          <p>paragraph of text {2 + 2}</p>
+        </div>
+      );
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render(<App />);
+      ReactDOM.createRoot(container).render(div);
     </script>
   </body>
 </html>
