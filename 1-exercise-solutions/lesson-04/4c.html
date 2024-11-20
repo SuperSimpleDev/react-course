@@ -34,12 +34,15 @@
         const [isButtonOn, setIsButtonOn] = React.useState(true);
 
         function switchButtonOn() {
-          // Another solution is: setIsButtonOn(!isButtonOn);
           if (isButtonOn) {
             setIsButtonOn(false);
           } else {
             setIsButtonOn(true);
           }
+          /*
+            Another solution is:
+            setIsButtonOn(!isButtonOn);
+          */
         }
 
         return (
