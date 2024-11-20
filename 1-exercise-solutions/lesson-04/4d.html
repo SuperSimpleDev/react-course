@@ -29,6 +29,10 @@
         cursor: pointer;
         margin-top: 10px;
       }
+
+      .show-button {
+        margin-left: 10px;
+      }
     </style>
   </head>
   <body>
@@ -40,6 +44,20 @@
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
       function LoginForm() {
+        const [showPassword, setShowPassword] = React.useState(false);
+
+        function toggleShowPassword() {
+          setShowPassword(!showPassword);
+          /*
+            Another solution is:
+            if (showPassword) {
+              setShowPassword(false);
+            } else {
+              setShowPassword(true);
+            }
+          */
+        }
+
         return (
           <>
             <div>
@@ -51,9 +69,15 @@
             <div>
               <input
                 placeholder="Password"
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 className="login-input"
               />
+              <button
+                className="show-button"
+                onClick={toggleShowPassword}
+              >
+                {showPassword ? 'Hide' : 'Show'}
+              </button>
             </div>
             <button className="login-button">Login</button>
             <button className="login-button">Sign up</button>
