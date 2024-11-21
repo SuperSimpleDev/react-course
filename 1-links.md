@@ -23,3 +23,6 @@ https://supersimple.dev/images/plain-t-shirt.png
 
 ## Lesson 3
 - Chatbot external library: https://unpkg.com/supersimpledev/chatbot.js
+
+## Lesson 4
+- HTML CSS Full course: https://youtu.be/G3e-cpL7ofc
