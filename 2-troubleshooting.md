@@ -1,4 +1,4 @@
-### Lesson 5 Troubleshooting
+## Lesson 5 Troubleshooting
 **Problem:** `mkdir test` does not create a folder named `test` in the project.<br>
 **Solution:** it may have created the `test` folder at another location on your computer.
 1. Open the VSCode settings by clicking the gear in the bottom-left > Settings.<br><img src="https://github.com/user-attachments/assets/03655adb-afd1-408f-8ac7-60a0217f90c7" alt="VSCode settings" width="300"/>
