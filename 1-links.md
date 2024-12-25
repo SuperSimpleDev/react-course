@@ -26,3 +26,6 @@ https://supersimple.dev/images/plain-t-shirt.png
 
 ## Lesson 4
 - HTML CSS Full course: https://youtu.be/G3e-cpL7ofc
+
+## Lesson 5
+- How to install NodeJS: https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md
