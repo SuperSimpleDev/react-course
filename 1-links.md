@@ -34,3 +34,9 @@ https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md
 
 **Note:** this course works with NodeJS version 20 or higher.<br>
 To check your version of NodeJS, run the command `node -v` in your command line.
+
+## Lesson 6
+
+## Lesson 7
+
+## Lesson 8
