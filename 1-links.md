@@ -28,4 +28,9 @@ https://supersimple.dev/images/plain-t-shirt.png
 - HTML CSS Full course: https://youtu.be/G3e-cpL7ofc
 
 ## Lesson 5
-- How to install NodeJS: https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md
+### How to Install NodeJS
+Install the latest version of NodeJS:<br>
+https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md
+
+**Note:** this course works with NodeJS version 20 or higher.<br>
+To check your version of NodeJS, run the command `node -v` in your command line.
