@@ -40,3 +40,5 @@ To check your version of NodeJS, run the command `node -v` in your command line.
 ## Lesson 7
 
 ## Lesson 8
+
+## Lesson 9
