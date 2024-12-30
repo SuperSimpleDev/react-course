@@ -38,12 +38,12 @@ To check your version of NodeJS, run the command `node -v` in your command line.
 ### Version of `npx create-vite`
 Here's the version of create-vite we're going to use to set up React:
 ```bash
-6.1.1
+6.0.1
 ```
 
 Here's the full command to set up React:
 ```bash
-npx create-vite@6.1.1
+npx create-vite@6.0.1
 ```
 
 ## Lesson 6
