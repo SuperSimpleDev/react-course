@@ -35,6 +35,17 @@ https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md
 **Note:** this course works with NodeJS version 20 or higher.<br>
 To check your version of NodeJS, run the command `node -v` in your command line.
 
+### Version of `npx create-vite`
+Here's the version of create-vite we're going to use to set up React:
+```bash
+6.1.1
+```
+
+Here's the full command to set up React:
+```bash
+npx create-vite@6.1.1
+```
+
 ## Lesson 6
 
 ## Lesson 7
