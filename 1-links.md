@@ -46,6 +46,21 @@ Here's the full command to set up React:
 npx create-vite@6.1.1
 ```
 
+### Correct React Version
+1. Open `package.json` inside the `chatbot-project` folder.
+2. Look for the `dependencies` section.
+```json
+"dependencies": {
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1"
+},
+```
+If your version of `react` and `react-dom` (on the right) is `"18.3.1"`, run this command to update React:
+```bash
+npm install react@19 react-dom@19 @types/react@19 @types/react-dom@19
+```
+3. If your version of `react` and `react-dom` starts with `19` or higher, you have the correct version of React. You don't need to update React.
+
 ## Lesson 6
 
 ## Lesson 7
