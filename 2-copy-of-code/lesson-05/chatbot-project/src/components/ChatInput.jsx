@@ -37,6 +37,17 @@ export function ChatInput({ chatMessages, setChatMessages }) {
     setInputText('');
   }
 
+  function clearMessages() {
+    setChatMessages([]);
+
+    // Here, you could also run:
+    // localStorage.setItem('messages', JSON.stringify([]));
+
+    // However, because chatMessages is being updated, the
+    // useEffect in the App component will run, and it will
+    // automatically update messages in localStorage to be [].
+  }
+
   return (
     <div className="chat-input-container">
       <input
@@ -50,6 +61,10 @@ export function ChatInput({ chatMessages, setChatMessages }) {
         onClick={sendMessage}
         className="send-button"
       >Send</button>
+      <button
+        onClick={clearMessages}
+        className="clear-button"
+      >Clear</button>
     </div>
   );
 }
