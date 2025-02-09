@@ -47,6 +47,9 @@ npx create-vite@6.2.0
 ```
 
 ### Version of React
+**Note:** If you used npx create-vite `6.2.0` or higher, you have the correct version of
+React and you can skip this step.
+
 1. Open `package.json` inside the `chatbot-project` folder.
 2. Look for the `dependencies` section.
 ```json
