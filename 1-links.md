@@ -38,30 +38,36 @@ To check your version of NodeJS, run the command `node -v` in your command line.
 ### Version of `npx create-vite`
 Here's the version of create-vite we're going to use to set up React:
 ```bash
-6.1.1
+6.2.0
 ```
 
 Here's the full command to set up React:
 ```bash
-npx create-vite@6.1.1
+npx create-vite@6.2.0
 ```
 
-### Correct React Version
+### Version of React
 1. Open `package.json` inside the `chatbot-project` folder.
 2. Look for the `dependencies` section.
 ```json
 "dependencies": {
-  "react": "^18.3.1",
-  "react-dom": "^18.3.1"
+  "react": "^19.0.0",
+  "react-dom": "^19.0.0"
 },
-```
-If your version of `react` and `react-dom` (on the right) is `"18.3.1"`, run this command to update React:
-```bash
-npm install react@19 react-dom@19 @types/react@19 @types/react-dom@19
 ```
 3. If your version of `react` and `react-dom` starts with `19` or higher, you have the correct version of React. You don't need to update React.
 
+4. If your version starts with `18`, run this command to update React:
+```bash
+npm install react@19 react-dom@19 @types/react@19 @types/react-dom@19
+```
+
 ## Lesson 6
+### Version of `npx create-vite`
+[Click here](3-versions.md#version-of-npx-create-vite) to get the correct version of `npx-vite` to use.
+
+### Version of React
+[Click here](3-versions.md#version-of-react) to get the correct version of React to use.
 
 ## Lesson 7
 
