@@ -72,6 +72,9 @@ npm install react@19 react-dom@19 @types/react@19 @types/react-dom@19
 ### Version of React
 [Click here](3-versions.md#version-of-react) to get the correct version of React to use.
 
+### Install Git
+[Click here](https://github.com/SuperSimpleDev/installation-instructions/blob/main/git.md) for instructions on installing Git.
+
 ## Lesson 7
 
 ## Lesson 8
