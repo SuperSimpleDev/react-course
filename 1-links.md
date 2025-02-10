@@ -73,6 +73,9 @@ npm install react@19 react-dom@19 @types/react@19 @types/react-dom@19
 ### Install Git
 [Click here](https://github.com/SuperSimpleDev/installation-instructions/blob/main/git.md) for instructions on installing Git.
 
+### Starting code for Ecommerce Project
+[Click here](https://github.com/SuperSimpleDev/ecommerce-project) to download the starting code.
+
 ## Lesson 7
 
 ## Lesson 8
