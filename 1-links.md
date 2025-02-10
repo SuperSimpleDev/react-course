@@ -33,7 +33,8 @@ Install the latest version of NodeJS:<br>
 https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md
 
 **Note:** this course works with NodeJS version 20 or higher.<br>
-To check your version of NodeJS, run the command `node -v` in your command line.
+To check your version of NodeJS, run the command `node -v` in your command line.<br>
+If the version is lower than 20, you'll need to re-install a higher version of NodeJS.
 
 ### Version of `npx create-vite`
 Here's the version of create-vite we're going to use to set up React:
@@ -67,7 +68,7 @@ npm install react@19 react-dom@19 @types/react@19 @types/react-dom@19
 
 ## Lesson 6
 ### Version of `npx create-vite`
-[Click here](3-versions.md#version-of-npx-create-vite) to get the correct version of `npx-vite` to use.
+[Click here](#version-of-npx-create-vite) to get the correct version of `npx-vite` to use.
 
 ### Install Git
 [Click here](https://github.com/SuperSimpleDev/installation-instructions/blob/main/git.md) for instructions on installing Git.
