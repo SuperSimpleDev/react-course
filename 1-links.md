@@ -87,6 +87,9 @@ Here's the full command to install react-router:
 npm install react-router@7.1.5
 ```
 
+### `react-router` documentation
+https://reactrouter.com/7.1.5/home
+
 ## Lesson 7
 
 ## Lesson 8
