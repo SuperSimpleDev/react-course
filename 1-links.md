@@ -76,6 +76,17 @@ npm install react@19 react-dom@19 @types/react@19 @types/react-dom@19
 ### Starting code for Ecommerce Project
 [Click here](https://github.com/SuperSimpleDev/ecommerce-project) to download the starting code.
 
+### Version of `react-router`
+Here's the version of react-router we use:
+```bash
+7.1.5
+```
+
+Here's the full command to install react-router:
+```bash
+npm install react-router@7.1.5
+```
+
 ## Lesson 7
 
 ## Lesson 8
