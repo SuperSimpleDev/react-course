@@ -95,6 +95,17 @@ Ecommerce Backend: https://github.com/supersimpledev/ecommerce-backend-ai
 
 Create the Ecommerce Backend with AI (old version): https://youtu.be/xuEMxe-6QII
 
+### Version of `axios`
+Here's the version of axios we use:
+```bash
+1.8.4
+```
+
+Here's the full command to install axios:
+```bash
+npm install axios@1.8.4
+```
+
 ## Lesson 8
 
 ## Lesson 9
