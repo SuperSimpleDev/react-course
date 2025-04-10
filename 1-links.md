@@ -91,6 +91,7 @@ npm install react-router@7.1.5
 https://reactrouter.com/7.1.5/start/library/routing
 
 ## Lesson 7
+Ecommerce Backend: https://github.com/supersimpledev/ecommerce-backend-ai
 
 ## Lesson 8
 
