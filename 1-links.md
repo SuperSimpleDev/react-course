@@ -106,6 +106,17 @@ Here's the full command to install axios:
 npm install axios@1.8.4
 ```
 
+### Version of `dayjs`
+Here's the version of dayjs we use:
+```bash
+1.11.13
+```
+
+Here's the full command to install dayjs:
+```bash
+npm install dayjs@1.11.13
+```
+
 ## Lesson 8
 
 ## Lesson 9
