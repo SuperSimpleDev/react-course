@@ -46,18 +46,14 @@ app.use((err, req, res, next) => {
 });
 /* eslint-enable no-unused-vars */
 
-// Sync database and load default data if none exists
+// Sync database and load default data if none exist
 await sequelize.sync();
-
-// Check if we have any products
 const productCount = await Product.count();
 if (productCount === 0) {
-  // No products found, populate with default data
   await Product.bulkCreate(defaultProducts);
   await DeliveryOption.bulkCreate(defaultDeliveryOptions);
   await CartItem.bulkCreate(defaultCart);
   await Order.bulkCreate(defaultOrders);
-  console.log('Populated database with default data');
 }
 
 // Start server
