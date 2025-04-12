@@ -1,0 +1,220 @@
+.orders-page {
+  max-width: 850px;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orders-page .page-title {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.orders-page .orders-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+}
+
+.orders-page .order-header {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(222, 222, 222);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.orders-page .order-header-left-section {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.orders-page .order-header-label {
+  font-weight: 700;
+}
+
+.orders-page .order-date,
+.orders-page .order-total {
+  margin-right: 45px;
+}
+
+.orders-page .order-header-right-section {
+  flex-shrink: 1;
+}
+
+@media (max-width: 575px) {
+  .orders-page .order-header {
+    flex-direction: column;
+    align-items: start;
+    line-height: 23px;
+    padding: 15px;
+  }
+
+  .orders-page .order-header-left-section {
+    flex-direction: column;
+  }
+
+  .orders-page .order-header-label {
+    margin-right: 5px;
+  }
+
+  .orders-page .order-date,
+  .orders-page .order-total {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-right: 0;
+  }
+
+  .orders-page .order-header-right-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.orders-page .order-details-grid {
+  padding: 40px 25px;
+  border: 1px solid rgb(222, 222, 222);
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  display: grid;
+  grid-template-columns: 110px 1fr 220px;
+  column-gap: 35px;
+  row-gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .orders-page .order-details-grid {
+    grid-template-columns: 110px 1fr;
+    row-gap: 0;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  .orders-page .order-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.orders-page .product-image-container {
+  text-align: center;
+}
+
+.orders-page .product-image-container img {
+  max-width: 110px;
+  max-height: 110px;
+}
+
+.orders-page .product-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.orders-page .product-delivery-date {
+  margin-bottom: 3px;
+}
+
+.orders-page .product-quantity {
+  margin-bottom: 8px;
+}
+
+.orders-page .buy-again-button {
+  font-size: 14px;
+  width: 140px;
+  height: 36px;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orders-page .buy-again-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.orders-page .product-actions {
+  align-self: start;
+}
+
+.orders-page .track-package-button {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px;
+}
+
+@media (max-width: 800px) {
+  .orders-page .buy-again-button {
+    margin-bottom: 10px;
+  }
+
+  .orders-page .product-actions {
+    /* grid-column: 2 means this element will be placed
+       in column 2 in the grid. (Normally, the column that
+       an element is placed in is determined by the order
+       of the elements in the HTML. grid-column overrides
+       this default ordering). */
+    grid-column: 2;
+    margin-bottom: 30px;
+  }
+
+  .orders-page .track-package-button {
+    width: 140px;
+  }
+}
+
+@media (max-width: 450px) {
+  .orders-page .product-image-container {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .orders-page .product-image-container img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .orders-page .product-name {
+    margin-bottom: 10px;
+  }
+
+  .orders-page .product-quantity {
+    margin-bottom: 15px;
+  }
+
+  .orders-page .buy-again-button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .orders-page .product-actions {
+    /* grid-column: auto; undos grid-column: 2; from above.
+      This element will now be placed in its normal column
+      in the grid. */
+    grid-column: auto;
+    margin-bottom: 70px;
+  }
+
+  .orders-page .track-package-button {
+    width: 100%;
+    padding: 12px;
+  }
+}
