@@ -1,0 +1,7 @@
+/* From lesson 6 exercise solutions. */
+.not-found-message {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 24px;
+  color: rgb(180, 180, 180);
+}
