@@ -93,7 +93,7 @@ https://reactrouter.com/7.1.5/start/library/routing
 ## Lesson 7
 Ecommerce Backend: https://github.com/supersimpledev/ecommerce-backend-ai
 
-Create the Ecommerce Backend with AI (old version): https://youtu.be/xuEMxe-6QII
+Create the Ecommerce Backend with AI: https://youtu.be/vBprybSmJs8
 
 ### Version of `axios`
 Here's the version of axios we use:
