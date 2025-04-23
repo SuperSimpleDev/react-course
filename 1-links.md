@@ -92,6 +92,7 @@ https://reactrouter.com/7.1.5/start/library/routing
 
 ## Lesson 7
 Ecommerce Backend: https://github.com/supersimpledev/ecommerce-backend-ai
+
 Ecommerce Backend Documentation: https://github.com/SuperSimpleDev/ecommerce-backend-ai/blob/main/documentation.md
 
 Create the Ecommerce Backend with AI: https://youtu.be/vBprybSmJs8
