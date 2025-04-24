@@ -120,5 +120,6 @@ npm install dayjs@1.11.13
 ```
 
 ## Lesson 8
+Ecommerce Backend Documentation: https://github.com/SuperSimpleDev/ecommerce-backend-ai/blob/main/documentation.md
 
 ## Lesson 9
