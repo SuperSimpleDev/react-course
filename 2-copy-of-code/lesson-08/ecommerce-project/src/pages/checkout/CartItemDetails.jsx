@@ -34,7 +34,7 @@ export function CartItemDetails({ cartItem, loadCart }) {
         <div className="product-quantity">
           <span>
             Quantity: {isUpdatingQuantity
-              ? <input type="number" className="quantity-textbox" />
+              ? <input type="text" className="quantity-textbox" />
               : <span className="quantity-label">{cartItem.quantity}</span>
             }
           </span>
