@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import './header.css';
 
 export function Header({ cart }) {
+  const navigate = useNavigate();
   const [search, setSearch] = useState('');
 
   const updateSearchInput = (event) => {
@@ -10,7 +11,7 @@ export function Header({ cart }) {
   };
 
   const searchProducts = () => {
-    console.log(search);
+    navigate(`/?search=${search}`);
   };
 
   let totalQuantity = 0;
