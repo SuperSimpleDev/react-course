@@ -11,16 +11,14 @@ export function CheckoutPage({ cart, loadCart }) {
 
   // This useEffect will only run once.
   useEffect(() => {
-    // I renamed the functions to be more accurate. You
-    // can rename the functions to whatever you want.
-    const fetchDeliveryOptions = async () => {
+    const fetchCheckoutData = async () => {
       const response = await axios.get(
         '/api/delivery-options?expand=estimatedDeliveryTime'
       );
       setDeliveryOptions(response.data);
     };
 
-    fetchDeliveryOptions();
+    fetchCheckoutData();
   }, []);
 
   // This useEffect will run every time the cart changes.
