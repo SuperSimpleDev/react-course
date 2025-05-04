@@ -123,3 +123,17 @@ npm install dayjs@1.11.13
 Ecommerce Backend Documentation: https://github.com/SuperSimpleDev/ecommerce-backend-ai/blob/main/documentation.md
 
 ## Lesson 9
+### vitest.config.js Code
+```js
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './setupTests.js',
+  }
+});
+```
