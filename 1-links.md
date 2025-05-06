@@ -123,6 +123,11 @@ npm install dayjs@1.11.13
 Ecommerce Backend Documentation: https://github.com/SuperSimpleDev/ecommerce-backend-ai/blob/main/documentation.md
 
 ## Lesson 9
+### Install Packages for Integration Tests
+```bash
+npm install --save-dev @testing-library/react@16.3.0 @testing-library/jest-dom@6.6.3 @testing-library/user-event@14.6.1 jsdom@26.1.0
+```
+
 ### vitest.config.js Code
 ```js
 import { defineConfig } from 'vitest/config'
@@ -136,4 +141,9 @@ export default defineConfig({
     setupFiles: './setupTests.js',
   }
 });
+```
+
+### setupTests.js Code
+```js
+import '@testing-library/jest-dom';
 ```
