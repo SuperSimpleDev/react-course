@@ -123,6 +123,17 @@ npm install dayjs@1.11.13
 Ecommerce Backend Documentation: https://github.com/SuperSimpleDev/ecommerce-backend-ai/blob/main/documentation.md
 
 ## Lesson 9
+### Version of `vitest`
+Here's the version of vitest we use:
+```bash
+3.1.2
+```
+
+Here's the full command to install vitest:
+```bash
+npm install --save-dev vitest@3.1.2
+```
+
 ### Install Packages for Integration Tests
 ```bash
 npm install --save-dev @testing-library/react@16.3.0 @testing-library/jest-dom@6.6.3 @testing-library/user-event@14.6.1 jsdom@26.1.0
