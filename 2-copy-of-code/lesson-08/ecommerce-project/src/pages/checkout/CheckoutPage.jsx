@@ -9,18 +9,26 @@ export function CheckoutPage({ cart, loadCart }) {
   const [deliveryOptions, setDeliveryOptions] = useState([]);
   const [paymentSummary, setPaymentSummary] = useState(null);
 
+  // This useEffect will only run once.
   useEffect(() => {
     const fetchCheckoutData = async () => {
-      let response = await axios.get(
+      const response = await axios.get(
         '/api/delivery-options?expand=estimatedDeliveryTime'
       );
       setDeliveryOptions(response.data);
-
-      response = await axios.get('/api/payment-summary');
-      setPaymentSummary(response.data);
     };
 
     fetchCheckoutData();
+  }, []);
+
+  // This useEffect will run every time the cart changes.
+  useEffect(() => {
+    const fetchPaymentSummary = async () => {
+      const response = await axios.get('/api/payment-summary');
+      setPaymentSummary(response.data);
+    };
+
+    fetchPaymentSummary();
   }, [cart]);
 
   return (
