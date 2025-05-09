@@ -1,7 +1,6 @@
-import axios from 'axios';
 import dayjs from 'dayjs';
-import { formatMoney } from '../../utils/money';
 import { DeliveryOptions } from './DeliveryOptions';
+import { CartItemDetails } from './CartItemDetails';
 
 export function OrderSummary({ cart, deliveryOptions, loadCart }) {
   return (
@@ -12,11 +11,6 @@ export function OrderSummary({ cart, deliveryOptions, loadCart }) {
             return deliveryOption.id === cartItem.deliveryOptionId;
           });
 
-        const deleteCartItem = async () => {
-          await axios.delete(`/api/cart-items/${cartItem.productId}`);
-          await loadCart();
-        };
-
         return (
           <div key={cartItem.productId} className="cart-item-container">
             <div className="delivery-date">
@@ -24,30 +18,7 @@ export function OrderSummary({ cart, deliveryOptions, loadCart }) {
             </div>
 
             <div className="cart-item-details-grid">
-              <img className="product-image"
-                src={cartItem.product.image} />
-
-              <div className="cart-item-details">
-                <div className="product-name">
-                  {cartItem.product.name}
-                </div>
-                <div className="product-price">
-                  {formatMoney(cartItem.product.priceCents)}
-                </div>
-                <div className="product-quantity">
-                  <span>
-                    Quantity: <input type="text" className="quantity-textbox" />
-                    <span className="quantity-label">{cartItem.quantity}</span>
-                  </span>
-                  <span className="update-quantity-link link-primary">
-                    Update
-                  </span>
-                  <span className="delete-quantity-link link-primary"
-                    onClick={deleteCartItem}>
-                    Delete
-                  </span>
-                </div>
-              </div>
+              <CartItemDetails cartItem={cartItem} loadCart={loadCart} />
 
               <DeliveryOptions cartItem={cartItem} deliveryOptions={deliveryOptions} loadCart={loadCart} />
             </div>
