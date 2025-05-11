@@ -27,23 +27,28 @@ export function OrdersPage({ cart }) {
         <div className="orders-grid">
           {orders.map((order) => {
             return (
-              <div key={order.id} className="order-container">
+              <div key={order.id} className="order-container"
+                data-testid="order-container">
 
                 <div className="order-header">
                   <div className="order-header-left-section">
                     <div className="order-date">
                       <div className="order-header-label">Order Placed:</div>
-                      <div>{dayjs(order.orderTimeMs).format('MMMM D')}</div>
+                      <div data-testid="order-date">
+                        {dayjs(order.orderTimeMs).format('MMMM D')}
+                      </div>
                     </div>
                     <div className="order-total">
                       <div className="order-header-label">Total:</div>
-                      <div>{formatMoney(order.totalCostCents)}</div>
+                      <div data-testid="order-total">
+                        {formatMoney(order.totalCostCents)}
+                      </div>
                     </div>
                   </div>
 
                   <div className="order-header-right-section">
                     <div className="order-header-label">Order ID:</div>
-                    <div>{order.id}</div>
+                    <div data-testid="order-id">{order.id}</div>
                   </div>
                 </div>
 
@@ -55,7 +60,8 @@ export function OrdersPage({ cart }) {
                           <img src={orderProduct.product.image} />
                         </div>
 
-                        <div className="product-details">
+                        <div className="product-details"
+                          data-testid="order-product-details">
                           <div className="product-name">
                             {orderProduct.product.name}
                           </div>

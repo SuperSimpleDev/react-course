@@ -27,7 +27,8 @@ export function CheckoutPage({ cart, loadCart }) {
     <>
       <title>Checkout</title>
 
-      <div className="checkout-header">
+      <div className="checkout-header"
+        data-testid="checkout-header">
         <div className="header-content">
           <div className="checkout-header-left-section">
             <a href="/">
