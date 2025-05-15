@@ -8,9 +8,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   const expand = req.query.expand;
-  let orders = await Order.findAll({
-    order: [['orderTimeMs', 'DESC']]
-  });
+  let orders = await Order.findAll({ order: [['orderTimeMs', 'DESC']] }); // Sort by most recent
 
   if (expand === 'products') {
     orders = await Promise.all(orders.map(async (order) => {
