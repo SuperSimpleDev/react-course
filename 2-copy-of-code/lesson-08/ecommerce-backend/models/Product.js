@@ -32,5 +32,15 @@ export const Product = sequelize.define('Product', {
     set(val) {
       this.setDataValue('keywords', val.join(','));
     }
+  },
+  createdAt: {
+    type: DataTypes.DATE(3)
+  },
+  updatedAt: {
+    type: DataTypes.DATE(3)
+  },
+}, {
+  defaultScope: {
+    order: [['createdAt', 'ASC']]
   }
 });
