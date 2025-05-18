@@ -13,5 +13,15 @@ export const DeliveryOption = sequelize.define('DeliveryOption', {
   priceCents: {
     type: DataTypes.INTEGER,
     allowNull: false
+  },
+  createdAt: {
+    type: DataTypes.DATE(3)
+  },
+  updatedAt: {
+    type: DataTypes.DATE(3)
+  },
+}, {
+  defaultScope: {
+    order: [['createdAt', 'ASC']]
   }
 });

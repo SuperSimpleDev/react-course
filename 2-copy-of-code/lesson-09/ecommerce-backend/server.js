@@ -62,12 +62,41 @@ app.use((err, req, res, next) => {
 
 // Sync database and load default data if none exist
 await sequelize.sync();
+
 const productCount = await Product.count();
 if (productCount === 0) {
-  await Product.bulkCreate(defaultProducts);
-  await DeliveryOption.bulkCreate(defaultDeliveryOptions);
-  await CartItem.bulkCreate(defaultCart);
-  await Order.bulkCreate(defaultOrders);
+  const timestamp = Date.now();
+
+  const productsWithTimestamps = defaultProducts.map((product, index) => ({
+    ...product,
+    createdAt: new Date(timestamp + index),
+    updatedAt: new Date(timestamp + index)
+  }));
+
+  const deliveryOptionsWithTimestamps = defaultDeliveryOptions.map((option, index) => ({
+    ...option,
+    createdAt: new Date(timestamp + index),
+    updatedAt: new Date(timestamp + index)
+  }));
+
+  const cartItemsWithTimestamps = defaultCart.map((item, index) => ({
+    ...item,
+    createdAt: new Date(timestamp + index),
+    updatedAt: new Date(timestamp + index)
+  }));
+
+  const ordersWithTimestamps = defaultOrders.map((order, index) => ({
+    ...order,
+    createdAt: new Date(timestamp + index),
+    updatedAt: new Date(timestamp + index)
+  }));
+
+  await Product.bulkCreate(productsWithTimestamps);
+  await DeliveryOption.bulkCreate(deliveryOptionsWithTimestamps);
+  await CartItem.bulkCreate(cartItemsWithTimestamps);
+  await Order.bulkCreate(ordersWithTimestamps);
+
+  console.log('Default data added to the database.');
 }
 
 // Start server
