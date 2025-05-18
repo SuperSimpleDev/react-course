@@ -18,5 +18,15 @@ export const Order = sequelize.define('Order', {
   products: {
     type: DataTypes.JSON,
     allowNull: false
+  },
+  createdAt: {
+    type: DataTypes.DATE(3)
+  },
+  updatedAt: {
+    type: DataTypes.DATE(3)
+  },
+}, {
+  defaultScope: {
+    order: [['createdAt', 'ASC']]
   }
 });

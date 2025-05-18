@@ -21,5 +21,15 @@ export const CartItem = sequelize.define('CartItem', {
       model: 'DeliveryOptions',
       key: 'id'
     }
+  },
+  createdAt: {
+    type: DataTypes.DATE(3)
+  },
+  updatedAt: {
+    type: DataTypes.DATE(3)
+  },
+}, {
+  defaultScope: {
+    order: [['createdAt', 'ASC']]
   }
 });
