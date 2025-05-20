@@ -158,3 +158,9 @@ export default defineConfig({
 ```js
 import '@testing-library/jest-dom';
 ```
+
+## Lesson 10
+Link to AWS: https://aws.amazon.com
+[AWS Troubleshooting Guide](https://github.com/SuperSimpleDev/react-course/blob/main/2-troubleshooting.md#lesson-10)
+
+Use Another Service to Deploy
