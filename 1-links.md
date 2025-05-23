@@ -167,6 +167,3 @@ Link to AWS: https://aws.amazon.com
 AWS Free Tier: https://aws.amazon.com/free
 
 [AWS Troubleshooting Guide](https://github.com/SuperSimpleDev/react-course/blob/main/2-troubleshooting.md#lesson-10)
-
-[Use Another Service to Deploy](https://github.com/SuperSimpleDev/react-course/blob/main/3-deploy-with-another-service.md)
-
