@@ -166,4 +166,6 @@ AWS Free Tier: https://aws.amazon.com/free
 
 [AWS Troubleshooting Guide](https://github.com/SuperSimpleDev/react-course/blob/main/2-troubleshooting.md#lesson-10)
 
+Backend Overview: https://youtu.be/XBu54nfzxAQ
+
 ## Lesson 11
