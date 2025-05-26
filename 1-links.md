@@ -160,10 +160,12 @@ import '@testing-library/jest-dom';
 ```
 
 ## Lesson 10
+Ecommerce Backend: https://github.com/supersimpledev/ecommerce-backend-ai
 
-## Lesson 11
 Link to AWS: https://aws.amazon.com
 
 AWS Free Tier: https://aws.amazon.com/free
 
 [AWS Troubleshooting Guide](https://github.com/SuperSimpleDev/react-course/blob/main/2-troubleshooting.md#lesson-10)
+
+## Lesson 11
