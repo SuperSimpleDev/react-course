@@ -1,0 +1,31 @@
+diff --git a/node_modules/sql.js-as-sqlite3/modules/Database.js b/node_modules/sql.js-as-sqlite3/modules/Database.js
+index 87a9034..3486cec 100644
+--- a/node_modules/sql.js-as-sqlite3/modules/Database.js
++++ b/node_modules/sql.js-as-sqlite3/modules/Database.js
+@@ -12,6 +12,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
+ function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+ import EventEmitter from 'eventemitter3';
++import fs from 'fs';
++import path from 'path';
+ import getNextTickFunction from './getNextTickFunction.js';
+ var config = {};
+ export function configure(_ref) {
+@@ -137,7 +139,16 @@ var Database = /*#__PURE__*/function (_EventEmitter) {
+         }
+       }).then(function (SQL) {
+         // Create a database.
+-        _this.database = new SQL.Database();
++        const databaseFile = path.join(process.cwd(), 'database.sqlite');
++        if (fs.existsSync(databaseFile)) {
++          console.log('Loaded db from database.sqlite');
++          const fileBuffer = fs.readFileSync(databaseFile);
++          _this.database = new SQL.Database(fileBuffer);
++        } else {
++          console.log('Loaded fresh db');
++          _this.database = new SQL.Database();
++        }
++
+         onSuccess();
+       }, onError);
+     }, onError);
