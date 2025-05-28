@@ -168,4 +168,9 @@ AWS Free Tier: https://aws.amazon.com/free
 
 Backend Overview: https://youtu.be/XBu54nfzxAQ
 
+Put an HTML Website on the Internet: https://youtu.be/p1QU3kLFPdg
+
+Namecheap: https://namecheap.pxf.io/jeDGga <br>
+(This is an affiliate link. If you buy a domain using this link, part of your purchase will support SuperSimpleDev. Thank you!)
+
 ## Lesson 11
