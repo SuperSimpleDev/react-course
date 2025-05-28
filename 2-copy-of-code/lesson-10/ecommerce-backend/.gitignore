@@ -1,0 +1,5 @@
+node_modules
+database.sqlite
+*.zip
+dist
+.DS_Store
