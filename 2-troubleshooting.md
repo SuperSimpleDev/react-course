@@ -57,4 +57,28 @@ cd ecommerce-backend && npm start
 
 13. Select the Free Tier > click "Deploy Web Service"
 
-14. After the Deploy is finished
+14. After the Deploy is finished, click the URL at the top and it should open the ecommerce project.
+
+#### Add a domain name in render.com
+1. First, you'll need to purchase a domain name. If you don't have one, I recommend purchasing from Namecheap: https://namecheap.pxf.io/jeDGga
+(This is an affiliate link. If you buy a domain using this link, part of your purchase will support SuperSimpleDev. Thank you!)
+
+2. Then in render.com, open the settings for your Web Service.
+
+3. In the "Custom Domains" section, enter your domain name, Save.
+
+4. render.com should give you some instructions on how to verify you domain:
+
+<img width="500px" src="https://github.com/user-attachments/assets/745bf6d8-61c0-4c53-8207-ed89a7e2042a" />
+
+5. To verify the domain. Go to Namecheap, open your dashboard > click "Domain List" > find your domain name > click "Manage".
+
+6. In the Settings, in the "Nameservers" section, make sure it is set to "Namecheap BasicDNS" (if you changed it, click "Save").
+
+7. Open the "Advanced DNS" settings at the top.
+
+8. Then, follow the first instruction provided by render.com. Click "Add new record" > select "A Record" > set Host to `@` (in other domain companies you may need to leave this as blank) > for the Value, enter the ip address provided by render.com (it should look something like `216.24.57.1`).
+
+9. Follow the second instruction provided by render.com. Click "Add new record" > select "CNAME Record" > set Host (or subdomain) to "www" > for the Value, enter the URL provided by render.com (it should look something like `test-repo-6-r7mu.onrender.com`).
+
+10. Click "Save All Changes", go back to render.com and click "Verify"
