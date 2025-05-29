@@ -1,7 +1,7 @@
 ## Troubleshooting
 Below is a list of issues and fixes for this course.
 
-### Lesson 5
+## Lesson 5
 **Problem:** `mkdir test` does not create a folder named `test` in the project.<br>
 **Solution:** it may have created the `test` folder at another location on your computer.
 1. Open the VSCode settings by clicking the gear in the bottom-left > Settings.<br><img src="https://github.com/user-attachments/assets/03655adb-afd1-408f-8ac7-60a0217f90c7" alt="VSCode settings" width="300"/>
@@ -9,3 +9,6 @@ Below is a list of issues and fixes for this course.
 3. Make sure `Terminal > Integrated: Cwd` is blank.
 4. Try `mkdir test` again.
 5. If that doesn't work, change `Terminal > Integrated: Cwd` to `${workspaceFolder}` and try `mkdir test` again.
+
+## Lesson 10 (AWS Troubleshooting Guide)
+Work in Progress
