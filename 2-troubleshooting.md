@@ -82,3 +82,46 @@ cd ecommerce-backend && npm start
 9. Follow the second instruction provided by render.com. Click "Add new record" > select "CNAME Record" > set Host (or subdomain) to "www" > for the Value, enter the URL provided by render.com (it should look something like `test-repo-6-r7mu.onrender.com`).
 
 10. Click "Save All Changes", go back to render.com and click "Verify"
+ 
+11. Now if you enter your domain name in the URL, it should open the ecommerce project (note: this can take a few minutes or up to 24 hours so we just need to be patient).
+
+#### Add a separate database in render.com
+We can also put the database on a separate computer.
+1. Go to the render.com dashboard.
+   
+2. Click `Add new` > select `Postgres`. `postgresql` is a type of database (similar to mysql if you know it)
+
+3. Give it name > click "Create database"
+
+4. In the settings for the database > scroll down to "Connections". These are the credentials that `ecommerce-backend` will use to connect to this database.
+
+5. In a new tab, open the settings for the Web Service you created earlier in render.com.
+
+6. In the sidebar, click "Environment"
+
+7. In "Environment Variables" > click "Add" > click "New variable"
+
+8. Enter these values (you'll need to create multiple enironment variables):
+```
+Key: DB_TYPE
+Value: postgres
+
+Key: RDS_DB_NAME
+Value: <In the database settings, in Connections, copy-paste the value of "Database">
+
+Key: RDS_USERNAME
+Value: <In the database settings, in Connections, copy-paste the value of "Username">
+
+Key: RDS_PASSWORD
+Value: <In the database settings, in Connections, copy-paste the value of "Password">
+
+Key: RDS_HOSTNAME
+Value: <In the database settings, in Connections, copy-paste the value of "Hostname">
+
+Key: RDS_PORT
+Value: <In the database settings, in Connections, copy-paste the value of "Port">
+```
+
+9. Click "Save, Rebuild, and Deploy"
+
+10. The ecommerce project should now be using the postgres database on a separate computer.
