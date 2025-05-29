@@ -14,7 +14,7 @@ Below is a list of issues and fixes for this course.
 If you have any issues that are not mentioned here, please let me know in the comments and I will update this.
 
 ### Unable to Create an AWS Account
-If you cannot create an AWS Account, you can follow these steps to deploy the App on another service https://render.com
+If you cannot create an AWS Account, we can use an alternative service like https://render.com <br>
 
 1. First, you'll need to upload your code to GitHub.
 2. Create / login to your GitHub Account https://github.com
