@@ -14,7 +14,7 @@ Below is a list of issues and fixes for this course.
 If you have any issues that are not mentioned here, please let me know in the comments and I will update this.
 
 ### Unable to Create an AWS Account
-If you cannot create an AWS Account, we can use an alternative service like https://render.com <br>
+If you cannot create an AWS Account, we can use a different service like https://render.com <br>
 
 1. First, you'll need to upload your code to GitHub.
 
