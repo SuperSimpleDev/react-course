@@ -17,17 +17,39 @@ If you have any issues that are not mentioned here, please let me know in the co
 If you cannot create an AWS Account, we can use an alternative service like https://render.com <br>
 
 1. First, you'll need to upload your code to GitHub.
+
 2. Create / login to your GitHub Account https://github.com
+
 3. Create a new repository. Click your profile image in the top-right > click "Your repositories" > click "New" > Give the repository a name > set it to "Public".
+
 4. Create an access token. Click your profile image in the top-right > click "Settings" > in the sidebar click "Developer Settings" > click "Personal access tokens" > click "Fine-grained tokens" > click "Generate new token" > give the token a name > in "Repository Access", click "All repositories" > expand "Repository permissions" > scroll down to "Contents" change access to "Read and write" > click "Generate token" > copy the token and keep it somewhere safe.
+
 5. Go back to VSCode, in the react-course folder, in the command line, run:
 ```bash
 git remote add origin https://<github_username>@github.com/<github_username>/<repository_name>.git
 ```
 Make sure to replace `<github_username>` and `<repository_name>` with our GitHub username and Repository Name.
+
 6. Run this code to upload your code to GitHub:
 ```bash
 git push origin main
 ```
 It might ask you to log into GitHub or at the top of VSCode it will ask you for the access token (in this case, paste the access token created earlier).
+
 7. Now if you open your github repository https://github.com/<github_username>/<repository_name> your code should be uploaded to GitHub.
+
+8. Open https://render.com and create an account / login.
+
+9. In the Project section, click "Deploy a Web Service".
+
+10. Connect your GitHub account, and select the repository that you just uploaded your code to > Click 
+
+11. In "Build Command", put this command:
+```bash
+cd ecommerce-backend && npm install && cd ../ecommerce-project && npm install && npm run build && mv dist ../ecommerce-backend
+```
+
+12. In "Start Command", put this command:
+```bash
+cd ecommerce-backend && npm start
+```
