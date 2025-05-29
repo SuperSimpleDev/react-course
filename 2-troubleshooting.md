@@ -48,6 +48,7 @@ It might ask you to log into GitHub or at the top of VSCode it will ask you for 
 ```bash
 cd ecommerce-backend && npm install && cd ../ecommerce-project && npm install && npm run build && mv dist ../ecommerce-backend
 ```
+(**Note:** If you followed the video and updated `vite.config.js`, you don't need the last part `&& mv dist ../ecommerce-backend`, so you can remove it).
 
 12. In "Start Command", put this command:
 ```bash
@@ -55,3 +56,5 @@ cd ecommerce-backend && npm start
 ```
 
 13. Select the Free Tier > click "Deploy Web Service"
+
+14. After the Deploy is finished
