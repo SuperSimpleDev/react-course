@@ -53,3 +53,5 @@ cd ecommerce-backend && npm install && cd ../ecommerce-project && npm install &&
 ```bash
 cd ecommerce-backend && npm start
 ```
+
+13. Select the Free Tier > click "Deploy Web Service"
