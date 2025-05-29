@@ -16,7 +16,7 @@ If you have any issues that are not mentioned here, please let me know in the co
 ### Unable to Create an AWS Account
 If you cannot create an AWS Account, you can follow these steps to deploy the App on another service https://render.com
 
-1. First, you'll need a GitHub account. Create one at https://github.com
-2. Create a new repository. Click your profile image in the top-right > click "Your repositories" > click "New"
-3. Give the repository a name and set it to "Public".
-4. 
+1. First, you'll need to upload your code to GitHub.
+2. Create / login to your GitHub Account https://github.com
+3. Create a new repository. Click your profile image in the top-right > click "Your repositories" > click "New" > Give the repository a name > set it to "Public".
+4. Create an access token. Click your profile image in the top-right > click "Settings" > in the sidebar click "Developer Settings" > click "Personal access tokens" > click "Fine-grained tokens" > click "Generate new token" > in "Repository Access", click "All repositories" > expand "Repository permissions" > scroll down to "Contents" change access to "Read and write" > click "Generate token"
