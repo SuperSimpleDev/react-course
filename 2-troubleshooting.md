@@ -11,4 +11,8 @@ Below is a list of issues and fixes for this course.
 5. If that doesn't work, change `Terminal > Integrated: Cwd` to `${workspaceFolder}` and try `mkdir test` again.
 
 ## Lesson 10 (AWS Troubleshooting Guide)
-Work in Progress
+If you have any issues that are not mentioned here, please let me know in the comments and I will update this.
+
+### Unable to Create an AWS Account
+If you cannot create an AWS Account, you can follow these steps to deploy the App on another service https://render.com.
+1. 
