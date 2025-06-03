@@ -176,3 +176,31 @@ Namecheap: https://namecheap.pxf.io/jeDGga <br>
 (This is an affiliate link. If you buy a domain using this link, part of your purchase will support SuperSimpleDev. Thank you!)
 
 ## Lesson 11
+### Set Up React Compiler
+1. Install the React Compiler npm package:
+```bash
+npm install --save-dev babel-plugin-react-compiler@rc
+```
+
+2. Copy this react config:
+```js
+react({
+  babel: {
+    plugins: [['babel-plugin-react-compiler', { target: '19' }]],
+  },
+})
+```
+
+3. Update the react config in `vite.config.js`:
+```js
+export default defineConfig({
+  // Put the react config here ⬇️
+  plugins: [react({
+    babel: {
+      plugins: [['babel-plugin-react-compiler', { target: '19' }]],
+    },
+  })],
+
+  ...
+})
+```
