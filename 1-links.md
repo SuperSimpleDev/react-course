@@ -204,3 +204,10 @@ export default defineConfig({
   ...
 })
 ```
+
+### Check if React Compiler is Working
+1. Start the backend using `npm run dev`.
+2. Start the frontend using `npm run dev`.
+3. Install the [React DevTools Chrome extension](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en).
+4. Open the Console, and open the "Components" tab.
+5. If there's a badge beside the components called "Memo ✨" the React Compiler is working.
