@@ -222,3 +222,6 @@ Here's the full command to set up TypeScript React:
 ```bash
 npx create-vite@6.5.0
 ```
+
+### Other Links
+Create GitHub account for GitHub Copilot: https://github.com
