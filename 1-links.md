@@ -211,3 +211,14 @@ export default defineConfig({
 3. Install the [React DevTools Chrome extension](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en).
 4. In your project, open the Console, and open the "Components" tab.
 5. If there's a badge beside the components called "Memo ✨" the React Compiler is working.
+
+### Version of `npx create-vite`
+Here's the version of create-vite we're going to use to set up TypeScript React:
+```bash
+6.5.0
+```
+
+Here's the full command to set up TypeScript React:
+```bash
+npx create-vite@6.5.0
+```
