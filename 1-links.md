@@ -177,12 +177,17 @@ Namecheap: https://namecheap.pxf.io/jeDGga <br>
 
 ## Lesson 11
 ### Set Up React Compiler
-1. Install the React Compiler npm package:
+1. Make sure your command line is running in `ecommerce-project`. If you need to:
+```bash
+cd ecommerce-project
+```
+
+2. Install the React Compiler npm package:
 ```bash
 npm install --save-dev babel-plugin-react-compiler@rc
 ```
 
-2. Copy this react config:
+3. Copy this react config:
 ```js
 react({
   babel: {
@@ -191,10 +196,14 @@ react({
 })
 ```
 
-3. Update the react config in `vite.config.js`:
+4. Update the react config in `vite.config.js`:
 ```js
 export default defineConfig({
-  // Put the react config here ⬇️
+  /* Replace the default react config:
+  plugins: [react()]
+  */
+
+  // With the react config you copied above, like this:
   plugins: [react({
     babel: {
       plugins: [['babel-plugin-react-compiler', { target: '19' }]],
