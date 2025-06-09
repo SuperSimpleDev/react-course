@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ChatInput } from './components/ChatInput';
 import ChatMessages from './components/ChatMessages';
+import RobotProfileImage from './assets/robot.png';
 import './App.css'
 
 function App() {
@@ -26,15 +27,20 @@ function App() {
   // const setChatMessages = array[1];
 
   return (
-    <div className="app-container">
-      <ChatMessages
-        chatMessages={chatMessages}
-      />
-      <ChatInput
-        chatMessages={chatMessages}
-        setChatMessages={setChatMessages}
-      />
-    </div>
+    <>
+      <title>Chatbot Project</title>
+      <link rel="icon" type="image/svg+xml" href={RobotProfileImage} />
+
+      <div className="app-container">
+        <ChatMessages
+          chatMessages={chatMessages}
+        />
+        <ChatInput
+          chatMessages={chatMessages}
+          setChatMessages={setChatMessages}
+        />
+      </div>
+    </>
   );
 }
 
