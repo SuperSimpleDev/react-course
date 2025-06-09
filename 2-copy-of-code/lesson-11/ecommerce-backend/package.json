@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "zip": "node zipFiles.js",
+    "postinstall": "patch-package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.1",
+    "patch-package": "8.0.0",
+    "pg": "^8.16.0",
+    "sequelize": "^6.6.5",
+    "sql.js": "1.10.3",
+    "sql.js-as-sqlite3": "0.2.1"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "eslint": "^8.0.0",
+    "nodemon": "^3.1.9"
+  }
+}
