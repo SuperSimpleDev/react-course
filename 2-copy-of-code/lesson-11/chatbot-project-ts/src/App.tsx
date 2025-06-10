@@ -1,35 +1,55 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { ChatInput } from './components/ChatInput';
+import ChatMessages from './components/ChatMessages';
+import RobotProfileImage from './assets/robot.png';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [chatMessages, setChatMessages] = useState([{
+    message: 'hello chatbot',
+    sender: 'user',
+    id: 'id1'
+  }, {
+    message: 'Hello! How can I help you?',
+    sender: 'robot',
+    id: 'id2'
+  }, {
+    message: 'can you get me todays date?',
+    sender: 'user',
+    id: 'id3'
+  }, {
+    message: 'Today is September 27',
+    sender: 'robot',
+    id: 'id4'
+  }]);
+  // const [chatMessages, setChatMessages] = array;
+  // const chatMessages = array[0];
+  // const setChatMessages = array[1];
+
+  // Note: in React, <title>{chatMessages.length} Messages</title>
+  // counts as putting 2 pieces of text in <title> like this:
+  // <title>{chatMessages.length} {'Messages'}</title>
+  //
+  // The <title> element may not support this. That's why we
+  // save it in a variable first and insert it as 1 text.
+  const title = `${chatMessages.length} Messages`;
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <title>{title}</title>
+      <link rel="icon" type="image/svg+xml" href={RobotProfileImage} />
+
+      <div className="app-container">
+        <ChatMessages
+          chatMessages={chatMessages}
+        />
+        <ChatInput
+          chatMessages={chatMessages}
+          setChatMessages={setChatMessages}
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
 export default App
