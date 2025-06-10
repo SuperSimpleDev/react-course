@@ -2,17 +2,15 @@ import { useState } from 'react'
 import { Chatbot } from 'supersimpledev';
 import './ChatInput.css';
 
+type ChatMessages = {
+  message: string;
+  sender: string;
+  id: string;
+}[];
+
 type ChatInputProps = {
-  chatMessages: {
-    message: string;
-    sender: string;
-    id: string;
-  }[];
-  setChatMessages: (chatMessages: {
-    message: string;
-    sender: string;
-    id: string;
-  }[]) => void;
+  chatMessages: ChatMessages;
+  setChatMessages: (chatMessages: ChatMessages) => void;
 };
 
 export function ChatInput({ chatMessages, setChatMessages }: ChatInputProps) {
