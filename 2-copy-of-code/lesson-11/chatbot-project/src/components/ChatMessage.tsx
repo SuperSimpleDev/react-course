@@ -2,7 +2,12 @@ import RobotProfileImage from '../assets/robot.png';
 import UserProfileImage from '../assets/user.png';
 import './ChatMessage.css';
 
-export function ChatMessage({ message, sender }) {
+type ChatMessageProps = {
+  message: string;
+  sender: string;
+};
+
+export function ChatMessage({ message, sender }: ChatMessageProps) {
   // const message = props.message;
   // const sender = props.sender;
   // const { message, sender } = props;
