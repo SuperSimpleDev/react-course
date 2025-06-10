@@ -16,7 +16,11 @@ type ChatInputProps = {
 export function ChatInput({ chatMessages, setChatMessages }: ChatInputProps) {
   const [inputText, setInputText] = useState('');
 
-  function saveInputText(event) {
+  function saveInputText(event: {
+    target: {
+      value: string;
+    };
+  }) {
     setInputText(event.target.value);
   }
 
@@ -49,7 +53,7 @@ export function ChatInput({ chatMessages, setChatMessages }: ChatInputProps) {
     <div className="chat-input-container">
       <input
         placeholder="Send a message to Chatbot"
-        size="30"
+        size={30}
         onChange={saveInputText}
         value={inputText}
         className="chat-input"
