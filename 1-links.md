@@ -176,6 +176,8 @@ Namecheap: https://namecheap.pxf.io/jeDGga <br>
 (This is an affiliate link. If you buy a domain using this link, part of your purchase will support SuperSimpleDev. Thank you!)
 
 ## Lesson 11
+Updates in React 19: https://react.dev/blog/2024/12/05/react-19
+
 ### Set Up React Compiler
 1. Make sure the command line is running in `ecommerce-project` (you may need to `cd ecommerce-project`).
 Install the React Compiler npm package:
