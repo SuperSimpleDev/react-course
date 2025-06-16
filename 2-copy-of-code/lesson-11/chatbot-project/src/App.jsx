@@ -26,9 +26,17 @@ function App() {
   // const chatMessages = array[0];
   // const setChatMessages = array[1];
 
+  // Note: in React, <title>{chatMessages.length} Messages</title>
+  // counts as putting 2 pieces of text in <title> like this:
+  // <title>{chatMessages.length} {'Messages'}</title>
+  //
+  // The <title> element may not support this. That's why we
+  // save it in a variable first and insert it as 1 text.
+  const title = `${chatMessages.length} Messages`;
+
   return (
     <>
-      <title>Chatbot Project</title>
+      <title>{title}</title>
       <link rel="icon" type="image/svg+xml" href={RobotProfileImage} />
 
       <div className="app-container">
