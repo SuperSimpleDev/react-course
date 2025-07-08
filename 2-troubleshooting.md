@@ -12,7 +12,7 @@ Below is a list of issues and fixes for this course.
 
 ---
 
-**Problem:** `npm` does not work on Windows<br>
+**Problem:** `npm install` does not work on Windows<br>
 **Solution:** check the nodejs troubleshooting steps here: https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md#troubleshooting
 
 ## Lesson 10 (AWS Troubleshooting Guide)
