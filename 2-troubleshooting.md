@@ -10,6 +10,11 @@ Below is a list of issues and fixes for this course.
 4. Try `mkdir test` again.
 5. If that doesn't work, change `Terminal > Integrated: Cwd` to `${workspaceFolder}` and try `mkdir test` again.
 
+---
+
+**Problem:** `npm` does not work on Windows<br>
+**Solution:** check the nodejs troubleshooting steps here: https://github.com/SuperSimpleDev/installation-instructions/blob/main/nodejs.md#troubleshooting
+
 ## Lesson 10 (AWS Troubleshooting Guide)
 If you have any issues that are not mentioned here, please let me know in the comments and I will update this.
 
