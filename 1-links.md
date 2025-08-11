@@ -60,16 +60,16 @@ npx create-vite@6.5.0
 ### Version of `react-router`
 Here's the version of react-router we use:
 ```bash
-7.1.5
+7.8.0
 ```
 
 Here's the full command to install react-router:
 ```bash
-npm install react-router@7.1.5
+npm install react-router@7.8.0
 ```
 
 ### `react-router` documentation
-https://reactrouter.com/7.1.5/start/library/routing
+https://reactrouter.com/7.8.0/start/declarative/routing
 
 ## Lesson 7
 Ecommerce Backend: https://github.com/supersimpledev/ecommerce-backend-ai
