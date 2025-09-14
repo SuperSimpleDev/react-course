@@ -152,14 +152,15 @@ AWS Free Tier: https://aws.amazon.com/free
 Backend Overview: https://youtu.be/XBu54nfzxAQ
 
 ### Elastic Beanstalk Instance Types
-**If you created your account after July 15, 2025 use these instance types:**
+If you created your account **after July 15, 2025** use these instance types:
 ```
 t3.micro
 t3.small
 ```
-(If you don't see these instance types, just use the default instance types)<br>
-<br>
-**If you created your account before July 15, 2025 use these instance types:**
+(If you don't see these instance types, just use the default instance types)<br />
+<br />
+
+If you created your account **before July 15, 2025** use these instance types:
 ```
 t3.micro
 t2.micro
