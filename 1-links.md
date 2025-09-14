@@ -166,6 +166,7 @@ t3.micro
 t2.micro
 ```
 
+### Other Links
 Put an HTML Website on the Internet: https://youtu.be/p1QU3kLFPdg
 
 Namecheap: https://namecheap.pxf.io/jeDGga <br>
