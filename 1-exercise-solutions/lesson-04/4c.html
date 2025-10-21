@@ -33,7 +33,7 @@
       function App() {
         const [isButtonOn, setIsButtonOn] = React.useState(true);
 
-        function switchButtonOn() {
+        function toggleButton() {
           if (isButtonOn) {
             setIsButtonOn(false);
           } else {
@@ -48,7 +48,7 @@
         return (
           <button
             className={isButtonOn ? 'on-button' : 'off-button'}
-            onClick={switchButtonOn}
+            onClick={toggleButton}
           >
             {isButtonOn ? 'ON' : 'OFF'}
           </button>
